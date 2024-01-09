@@ -1,7 +1,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
-h1 {font-size: 1.5em;margin-bottom: 10px;}
-p{font-size: 1em;line-height: 1.3em;margin-bottom: 10px;}
+h1 {font-size: 1.5em;margin-bottom: 10px;animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */}
+p{font-size: 1em;line-height: 1.3em;margin-bottom: 10px;animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 nav ul{list-style:none}
 blockquote,q{quotes:none}
@@ -121,6 +121,7 @@ input,select{vertical-align:middle}
     margin: 0px 3px 0 10px;
     line-height: 29px;
     font-size: 17px;
+    animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */
 }
 .taskbarPanel {
     display: inline-block;
@@ -185,10 +186,10 @@ input,select{vertical-align:middle}
 #window1 {	top: 400px; left: 120px;}
 #window2 {	top: 250px; left: 300px;}
 #window3 {	top: 125px; left: 420px;}
-#window0 .wincontent {	width: 660px; height: 400px;	}
-#window1 .wincontent {	width: 500px; height: 300px;	}
-#window2 .wincontent {	width: 400px; height: 350px;	}
-#window3 .wincontent {	width: 400px; height: 350px;	}
+#window0 .wincontent {	width: 660px; height: 400px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
+#window1 .wincontent {	width: 500px; height: 300px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
+#window2 .wincontent {	width: 400px; height: 350px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
+#window3 .wincontent {	width: 400px; height: 350px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}
 	#window3 {	left: 50px;	}	
@@ -199,12 +200,25 @@ input,select{vertical-align:middle}
 	#window1 {	top: 190px;	left: -5px;	}
 }
 @media screen and (max-width:540px){
-#window0 .wincontent {	width: 230px; height: 200px;	}
+#window0 .wincontent {	width: 230px; height: 200px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
 #window3 .wincontent {
     width: 275px;
     height: auto;
+    animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */
 }
-#window3 {    top: 9px;    left: 10px;	}
-#window2 {    left: -118px;	}
-#window1 .wincontent {    width: auto;    height: 300px;	}
+#window3 {    top: 9px;    left: 10px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
+#window2 {    left: -118px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
+#window1 .wincontent {    width: auto;    height: 300px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */ }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
