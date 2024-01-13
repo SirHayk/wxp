@@ -204,21 +204,8 @@ input,select{vertical-align:middle}
 #window3 .wincontent {
     width: 275px;
     height: auto;
-    animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */
 }
-#window3 {    top: 9px;    left: 10px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
-#window2 {    left: -118px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */	}
-#window1 .wincontent {    width: auto;    height: 300px; animation: blink 1s infinite; /* 1s es la duración de la animación, y infinite indica que se repetirá infinitamente */ }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+#window3 {    top: 9px;    left: 10px; }
+#window2 {    left: -118px; }
+#window1 .wincontent {    width: auto;    height: 300px; }
 }
